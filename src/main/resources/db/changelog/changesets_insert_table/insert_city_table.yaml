@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_city
+      author: Oleksandr Lisniak
+      changes:
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: id
+                  value: 8d0a175c-0a92-490c-972f-be9c495da805
+              - column:
+                  name: city_name
+                  value: Paris
+
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: id
+                  value: 40e16013-a82c-4b88-b929-0369a0a3524a
+              - column:
+                  name: city_name
+                  value: London
+
