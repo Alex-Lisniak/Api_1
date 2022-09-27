@@ -14,7 +14,7 @@ import java.util.UUID;
 public class AuthKeyGenerator {
     private final AuthKeyRepository authKeyRepository;
 
-    @Scheduled(cron = "0 0/5 * * * *")
+    @Scheduled(cron = "0 0/3 * * * *")
     public void recreateKey(){
         authKeyRepository.deleteAll();
         AuthKey authKey = new AuthKey(UUID.randomUUID() , new Date().getTime() + 300_000);

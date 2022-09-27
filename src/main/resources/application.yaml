@@ -7,8 +7,6 @@ jpa:
       jdbc:
         time_zone: UTC
 
-
-
 hibernate:
   ddl-auto: update
   show-sql: true
@@ -27,3 +25,5 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
+server:
+  port: 8090
