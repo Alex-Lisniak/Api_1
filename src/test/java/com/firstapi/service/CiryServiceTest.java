@@ -20,8 +20,7 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class CiryServiceTest {
-    @InjectMocks
-    private CityServiceImpl cityService;
+
 
     @Mock
     private CityRepository cityRepository;

@@ -23,6 +23,7 @@ public class CityController {
 
  // todo - provide methods if different cities has equal name
  // todo - replace post methods
+ // todo - return 403 code if request without key
 
     @GetMapping("/{cityName}")
     public boolean getCityByName(@RequestHeader(value = "key") UUID key, @PathVariable String cityName){

@@ -43,7 +43,7 @@ public class CityServiceImpl implements CityService {
     public CityDto getCityByName(UUID key, String cityName){
         if(authKeyValidator.validate(key)) {
             return cityMapper.INSTANCE.cityToDto(cityRepository.getCityByName(cityName).orElseThrow( () -> new CityNotFoundException("City with " + cityName + " name wasn`t found")));
-        } else throw new KeyIsNotValidException("Key is not valid " + + new Date().getTime() );
+        } else throw new KeyIsNotValidException("Key is not valid " +  new Date().getTime() );
     }
 
     @Override
